@@ -136,7 +136,7 @@
     </div>
 </section>
 <script src="/socket.io/socket.io.js"></script>
-<script src="/public/app.js"></script>
+<!-- <script src="/public/app.js"></script> -->
 <script>
     // Your JavaScript code here
     const socket = io();
@@ -144,8 +144,8 @@
 let name;
 do {
     name = prompt("Please enter your Name:");
-    name = name.toUpperCase()
 } while (!name);
+name = name.toUpperCase()
 
 let messagearea = document.querySelector(".message__area");
 let info = document.querySelector(".info");
